@@ -1,0 +1,19 @@
+.input-container {
+  @apply my-3 md:my-6;
+}
+
+.input-container > label {
+  @apply w-full;
+}
+
+.input-container > label > p {
+  @apply text-base md:text-xl uppercase font-medium mb-1 md:mb-2;
+}
+
+.input-container > label > input {
+  @apply px-[2px] md:px-1 py-[2px] md:py-1 w-full font-medium rounded-lg focus:outline-none disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.input-container > p {
+  @apply h-4 text-xs text-red font-medium;
+}

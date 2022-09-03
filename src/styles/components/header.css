@@ -1,0 +1,23 @@
+.header-container {
+  @apply h-14 flex items-center justify-between px-4 md:px-10 lg:px-20;
+}
+
+.header-container > h1 {
+  @apply text-xl text-blue-300 font-bold;
+}
+
+.header-right-items {
+  @apply flex;
+}
+
+.header-right-items > p {
+  @apply hidden sm:block text-lg font-medium text-blue-200;
+}
+
+.header-right-items > img {
+  @apply w-8 h-8 rounded-full mr-4 ml-2;
+}
+
+.header-right-items > button {
+  @apply text-sm px-4 py-1 rounded-full bg-blue-200 text-white;
+}

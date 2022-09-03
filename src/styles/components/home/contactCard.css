@@ -1,0 +1,31 @@
+.contact-card {
+  @apply w-[280px] h-36 py-4 px-4 border border-gray-100 rounded-md shadow-box;
+}
+
+.contact-card-top-element {
+  @apply flex justify-between items-center;
+}
+
+.contact-card-top-element > img {
+  @apply w-12 h-12 rounded-full;
+}
+
+.contact-card-top-element > p {
+  @apply max-w-[80px] text-[10px] leading-4 truncate;
+}
+
+.contact-card-bottom-element {
+  @apply mt-3;
+}
+
+.contact-card-bottom-element > h3 {
+  @apply text-base font-semibold text-blue-200 max-w-full truncate;
+}
+
+.contact-card-bottom-element > h4 {
+  @apply text-[10px] leading-4 font-medium;
+}
+
+.contact-card-bottom-element > p {
+  @apply text-[10px] leading-4 max-w-full truncate;
+}

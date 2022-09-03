@@ -1,0 +1,31 @@
+.skeleton-card {
+  @apply animate-pulse w-[280px] h-36 py-4 px-4 border border-gray-100 rounded-md shadow-box;
+}
+
+.skeleton-card-top-element {
+  @apply flex justify-between items-center;
+}
+
+.skeleton-card-top-element > div {
+  @apply w-12 h-12 rounded-full bg-gray-200;
+}
+
+.skeleton-card-top-element > p {
+  @apply w-20 h-4 bg-gray-200;
+}
+
+.skeleton-card-bottom-element {
+  @apply mt-3;
+}
+
+.skeleton-card-bottom-element > p:nth-child(1) {
+  @apply w-36 h-5 bg-gray-200 mb-1;
+}
+
+.skeleton-card-bottom-element > p:nth-child(2) {
+  @apply w-20 h-3 bg-gray-200 mb-1;
+}
+
+.skeleton-card-bottom-element > p:nth-child(3) {
+  @apply w-32 h-3 bg-gray-200;
+}

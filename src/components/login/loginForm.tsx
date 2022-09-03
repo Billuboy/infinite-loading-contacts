@@ -1,3 +1,5 @@
+import 'styles/components/login/loginForm.css';
+
 import { useState } from 'react';
 import { useForm, Resolver } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
@@ -64,7 +66,7 @@ export default function LoginForm() {
   });
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} className="form-fields">
       <Input
         register={register}
         name="username"
@@ -78,7 +80,7 @@ export default function LoginForm() {
         disabled={disabled}
       />
       <button type="submit" disabled={disabled}>
-        Login
+        {disabled ? 'Logging In...' : 'Login'}
       </button>
     </form>
   );

@@ -1,3 +1,4 @@
+import 'styles/components/header.css';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 import { useAuth } from '@hooks';
@@ -14,10 +15,10 @@ export default function Header() {
   };
 
   return (
-    <header>
-      <div>ContactList</div>
+    <header className="header-container">
+      <h1>ContactList</h1>
       {!isLoginPage && (
-        <div>
+        <div className="header-right-items">
           <p>{auth.username}</p>
           <img src={auth.avatar} alt={auth.username} loading="lazy" />
           <button type="button" onClick={logoutCb}>

@@ -15,7 +15,7 @@ export default function useInfiniteScroll(limit: number) {
     (index) =>
       `https://randomuser.me/api/?page=${
         index + 1
-      }&results=${limit}&inc=name,email,picture,phone`,
+      }&results=${limit}&inc=name,email,picture,phone,location`,
     fetcher,
     {
       revalidateAll: false,
@@ -37,7 +37,7 @@ export default function useInfiniteScroll(limit: number) {
         ]);
         setLoading(() => false);
       }
-    }, 4000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, [isValidating]);

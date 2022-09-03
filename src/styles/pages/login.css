@@ -1,0 +1,11 @@
+.login-form {
+  @apply w-[280px] md:w-[450px] border border-gray-100 shadow-md py-5 md:py-9 px-5 md:px-9 rounded-lg;
+}
+
+.login-form > div {
+  @apply text-xl md:text-3xl font-semibold text-center mb-10 md:mb-14;
+}
+
+.login-form > div > span {
+  @apply text-blue-300;
+}
