@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import useSWRInfinite from 'swr/infinite';
 
-import { User } from '@interface/apiResponse';
+import { User } from 'types/apiResponse';
 
 const fetcher = (url: string) =>
   fetch(url)

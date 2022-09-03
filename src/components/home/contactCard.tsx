@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { User } from '@interface/apiResponse';
+import { User } from 'types/apiResponse';
 
 type ContactCardProps = {
   info: User;

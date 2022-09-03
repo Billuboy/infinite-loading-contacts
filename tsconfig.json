@@ -19,8 +19,9 @@
     "paths": {
       "@pages/*": ["pages/*"],
       "@components/*": ["components/*"],
-      "@interface/*": ["interface/*"],
-      "@hooks": ["hooks/index"]
+      "types/*": ["types/*"],
+      "@hooks": ["hooks/index"],
+      "@validations": ["validations/index"]
     }
   },
   "include": ["src/vite-env.d.ts", "src/**/*.ts", "src/**/*.tsx"],
