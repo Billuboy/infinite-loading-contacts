@@ -8,7 +8,7 @@ _The application is made using ReactJs and SWR. The application fetches a public
 _SWR is a smart fetching, caching and state management tool, SWR reduces the number of re-renders, providing a good UX._
 
 ## TechStack Used
-<img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="node" width="40" height="40"/> img alt="Tailwind" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
+<img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="node" width="40" height="40"/> <img alt="Tailwind" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
 
 ## Platform Requriements
 
