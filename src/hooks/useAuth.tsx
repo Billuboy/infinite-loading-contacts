@@ -18,6 +18,7 @@ const AuthContext = createContext<AuthContextValues>({
   auth: {
     isAuthenticated: false,
     username: '',
+    avatar: '',
   },
   login: () =>
     new Promise((resolve) => {
@@ -32,12 +33,17 @@ export default function AuthContextProvider({ children }: AuthContextProps) {
   const [auth, setAuth] = useState({
     isAuthenticated: false,
     username: '',
+    avatar: '',
   });
 
   useEffect(() => {
     if (localStorage.getItem('auth_status') === 'true')
-      setAuth(() => ({ isAuthenticated: true, username: 'foo' }));
-  });
+      setAuth(() => ({
+        isAuthenticated: true,
+        username: 'foo',
+        avatar: 'https://avatar.tobi.sh/foo',
+      }));
+  }, []);
 
   const login = useCallback(
     (creds: AuthFormValues) =>
@@ -45,7 +51,11 @@ export default function AuthContextProvider({ children }: AuthContextProps) {
         setTimeout(() => {
           if (creds.username === 'foo' && creds.password === 'bar') {
             localStorage.setItem('auth_status', 'true');
-            setAuth(() => ({ isAuthenticated: true, username: 'foo' }));
+            setAuth(() => ({
+              isAuthenticated: true,
+              username: 'foo',
+              avatar: 'https://avatar.tobi.sh/foo',
+            }));
             resolve({ status: 'successful' });
           } else resolve({ status: 'unsuccessful' });
         }, 2000);
@@ -56,7 +66,7 @@ export default function AuthContextProvider({ children }: AuthContextProps) {
 
   const logout = useCallback(() => {
     localStorage.removeItem('auth_status');
-    setAuth(() => ({ isAuthenticated: false, username: '' }));
+    setAuth(() => ({ isAuthenticated: false, username: '', avatar: '' }));
     return { status: 'successful' } as AuthFunctionsReturn;
   }, []);
 

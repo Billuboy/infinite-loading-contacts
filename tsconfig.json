@@ -21,7 +21,8 @@
       "@components/*": ["components/*"],
       "types/*": ["types/*"],
       "@hooks": ["hooks/index"],
-      "@validations": ["validations/index"]
+      "@validations": ["validations/index"],
+      "@guards": ["guards/index"]
     }
   },
   "include": ["src/vite-env.d.ts", "src/**/*.ts", "src/**/*.tsx"],

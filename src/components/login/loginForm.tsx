@@ -34,7 +34,7 @@ const resolver: Resolver<AuthFormValues, ResolverReturn> = async (formBody) => {
 };
 
 export default function LoginForm() {
-  const [disabled, setDisabled] = useState<boolean>(true);
+  const [disabled, setDisabled] = useState<boolean>(false);
   const navigate = useNavigate();
   const { login } = useAuth();
 

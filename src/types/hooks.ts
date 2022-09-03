@@ -13,6 +13,7 @@ export type AuthContextValues = {
   auth: {
     isAuthenticated: boolean;
     username: string;
+    avatar: string;
   };
   login: (creds: AuthFormValues) => Promise<AuthFunctionsReturn>;
   logout: () => AuthFunctionsReturn;
