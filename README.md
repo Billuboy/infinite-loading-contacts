@@ -21,6 +21,7 @@ _SWR is a smart fetching, caching and state management tool, SWR reduces the num
 1. Clone this repository
 2. `npm install` or `yarn install` in the project root folder.
 3. `npm run dev` or `yarn dev` to start application in development mode.
+4. Credentials for login are: username `foo`, password `bar`. 
 
 
 ## NPM Packages Used
